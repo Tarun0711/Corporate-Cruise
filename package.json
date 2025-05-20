@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "concurrently -c \"bgBlue.bold,bgGreen.bold\" -n \"FRONTEND,BACKEND\" \"cd CCWEBAPPfrontend && npm run dev\" \"cd CCWEBAPPbackend && npm run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
+}

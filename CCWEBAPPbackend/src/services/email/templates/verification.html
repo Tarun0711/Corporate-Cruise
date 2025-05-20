@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification - Corporate Cruise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .otp-box {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Corporate Cruise</h1>
+        </div>
+        <h2>Email Verification</h2>
+        <p>Hello,</p>
+        <p>Thank you for signing up with Corporate Cruise. Please use the following OTP to verify your email address:</p>
+        
+        <div class="otp-box">
+            {{otp}}
+        </div>
+        
+        <p>This OTP will expire in {{expiryMinutes}} minutes.</p>
+        <p>If you didn't request this verification, please ignore this email.</p>
+        
+        <div class="footer">
+            <p>This is an automated message, please do not reply.</p>
+            <p>&copy; Corporate Cruise {{currentYear}}</p>
+        </div>
+    </div>
+</body>
+</html> 
